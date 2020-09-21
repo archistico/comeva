@@ -1,6 +1,11 @@
-<h1>Dati generali</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora exercitationem distinctio voluptatem perferendis fuga quos quo iusto temporibus eveniet maxime accusamus harum, corporis quasi adipisci, praesentium dignissimos voluptatum expedita?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora exercitationem distinctio voluptatem perferendis fuga quos quo iusto temporibus eveniet maxime accusamus harum, corporis quasi adipisci, praesentium dignissimos voluptatum expedita?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora exercitationem distinctio voluptatem perferendis fuga quos quo iusto temporibus eveniet maxime accusamus harum, corporis quasi adipisci, praesentium dignissimos voluptatum expedita?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora exercitationem distinctio voluptatem perferendis fuga quos quo iusto temporibus eveniet maxime accusamus harum, corporis quasi adipisci, praesentium dignissimos voluptatum expedita?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora exercitationem distinctio voluptatem perferendis fuga quos quo iusto temporibus eveniet maxime accusamus harum, corporis quasi adipisci, praesentium dignissimos voluptatum expedita?</p>
+<h1>Dimmi come stai</h1>
+<form>
+    <input type="date">
+    <select name="" id="">
+        <option value="1" selected>Tutto il giorno</option>
+        <option value="2">Mattina</option>
+        <option value="3">Pomeriggio</option>
+        <option value="4">Sera</option>
+        <option value="5">Notte</option>
+    </select>
+</form>
