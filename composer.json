@@ -1,0 +1,12 @@
+{
+    "name": "archistico/comeva",
+    "authors": [
+        {
+            "name": "archistico",
+            "email": "info@archistico.com"
+        }
+    ],
+    "require": {
+        "bcosca/fatfree": "^3.7"
+    }
+}
