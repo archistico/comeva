@@ -1,5 +1,5 @@
 <?php
-namespace App\Comeva;
+namespace App\Comoodo;
 
 class Nuovo
 {
