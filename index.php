@@ -19,5 +19,6 @@ $f3->route('POST @login_autenticazione_verificapin: /', '\App\Login\Autenticazio
 
 // COMOODO
 $f3->route('GET @comoodo_nuovo_datigenerali: /nuovo', '\App\Comoodo\Nuovo->DatiGenerali');
+$f3->route('POST @comoodo_nuovo_datigenerali_registra: /nuovo', '\App\Comoodo\Nuovo->DatiGeneraliRegistra');
 
 $f3->run();
