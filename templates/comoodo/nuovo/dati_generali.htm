@@ -6,13 +6,33 @@
     </div>
     <div class="form-group">
         <label for="periodo">Periodo</label>
-        <select class="form-control" name="" id="periodo" required>
+        <select class="form-control" name="periodo" id="periodo" required>
             <option value="1" selected>Tutto il giorno</option>
             <option value="2">Mattina</option>
             <option value="3">Pomeriggio</option>
             <option value="4">Sera</option>
             <option value="5">Notte</option>
         </select>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="comeva" id="comevaOttimo" value="Ottimo" checked>
+        <label class="form-check-label" for="comevaOttimo">Ottimo</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="comeva" id="comevaBuono" value="Buono">
+        <label class="form-check-label" for="comevaBuono">Buono</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="comeva" id="comevaCosicosi" value="Così così">
+        <label class="form-check-label" for="comevaCosicosi">Così così</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="comeva" id="comevaMale" value="Male">
+        <label class="form-check-label" for="comevaMale">Male</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="comeva" id="comevaTerribile" value="Terribile">
+        <label class="form-check-label" for="comevaTerribile">Terribile</label>
     </div>
 </form>
 
@@ -35,7 +55,30 @@
         data_input.name = "data";
         data_input.type = "hidden";
         data_input.value = data;
+
+        let selectPeriodo = document.getElementById("periodo");
+        let periodo = selectPeriodo.options[selectPeriodo.selectedIndex].text;
+        let periodo_input = document.createElement("input");
+        periodo_input.name = "periodo";
+        periodo_input.type = "hidden";
+        periodo_input.value = periodo;
+
+        let comeva_input = document.createElement("input");
+        let rbs = document.querySelectorAll('input[name="comeva"]');
+        let selectedValue;
+        for (const rb of rbs) {
+            if (rb.checked) {
+                selectedValue = rb.value;
+                break;
+            }
+        }
+        comeva_input.name = "comeva";
+        comeva_input.type = "hidden";
+        comeva_input.value = selectedValue;
+
         form.appendChild(data_input);
+        form.appendChild(periodo_input);
+        form.appendChild(comeva_input);
         form.submit();
     }
 </script>

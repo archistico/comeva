@@ -13,6 +13,10 @@ class Nuovo
     public function DatiGeneraliRegistra($f3)
     {
         $data = $f3->get('POST.data');
-        echo \App\Utilita\Utilita::ConvertYMDToDMY($data);
+        $periodo = $f3->get('POST.periodo');
+        $comeva = $f3->get('POST.comeva');
+        echo $data;
+        echo $periodo;
+        echo $comeva;
     }
 }
